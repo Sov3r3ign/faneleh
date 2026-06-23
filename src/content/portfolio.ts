@@ -3,10 +3,10 @@ export const profile = {
   name: "Fanelesibonge Hlebani",
   firstName: "Fanelesibonge",
   lastName: "Hlebani",
-  title: "Bachelor of Information Technology Student",
+  title: "IT Intern at CAPACITI",
   tagline: "Building thoughtful software that solves real problems.",
   summary:
-    "I'm an Information Technology student passionate about full-stack development, clean architecture, and shipping products people enjoy using. Currently exploring distributed systems, developer tooling, and AI-assisted workflows.",
+    "I'm an IT Intern at CAPACITI through the Youth Employment Service programme, with a Bachelor of Information Technology background. Passionate about full-stack development, clean architecture, and shipping products people enjoy using.",
   location: "City, Country",
   email: "you@example.com",
   github: "https://github.com/your-handle",
