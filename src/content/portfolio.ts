@@ -77,14 +77,14 @@ export const achievements = [
 
 export const experience = [
   {
-    period: "Jun 2025 – Aug 2025",
-    role: "Software Engineering Intern",
-    org: "Company Name",
-    location: "Remote",
+    period: "2025 – Present",
+    role: "IT Intern",
+    org: "CAPACITI",
+    location: "Hybrid",
     bullets: [
-      "Shipped three production features in the customer dashboard used by 12k+ users.",
-      "Wrote integration tests that reduced regression incidents in my area by ~40%.",
-      "Collaborated daily with designers and PMs across three time zones.",
+      "Building practical IT and software skills through hands-on project work.",
+      "Collaborating with peers and mentors on real-world technology challenges.",
+      "Exploring full-stack development, cloud fundamentals, and AI-assisted tooling.",
     ],
   },
   {
