@@ -40,7 +40,7 @@ export const education = [
   {
     period: "2022 – 2025",
     title: "Bachelor of Information Technology",
-    org: "University Name",
+    org: "Nelson Mandela University",
     detail:
       "Coursework: Programming, Data Structures, Databases, Web Development, Networks, Software Engineering, Information Systems.",
   },
