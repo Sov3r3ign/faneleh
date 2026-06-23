@@ -38,7 +38,7 @@ export const about = {
 
 export const education = [
   {
-    period: "2022 – 2025 (expected)",
+    period: "2022 – 2025",
     title: "Bachelor of Information Technology",
     org: "University Name",
     detail:
