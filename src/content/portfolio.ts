@@ -1,10 +1,12 @@
 // Centralized placeholder content — edit these to personalize the portfolio.
 export const profile = {
-  name: "Your Name",
-  title: "Computer Science Student & Aspiring Software Engineer",
+  name: "Fanelesibonge Hlebani",
+  firstName: "Fanelesibonge",
+  lastName: "Hlebani",
+  title: "Bachelor of Information Technology Student",
   tagline: "Building thoughtful software that solves real problems.",
   summary:
-    "I'm a final-year computer science student passionate about full-stack development, clean architecture, and shipping products people enjoy using. Currently exploring distributed systems, developer tooling, and AI-assisted workflows.",
+    "I'm an Information Technology student passionate about full-stack development, clean architecture, and shipping products people enjoy using. Currently exploring distributed systems, developer tooling, and AI-assisted workflows.",
   location: "City, Country",
   email: "you@example.com",
   github: "https://github.com/your-handle",
