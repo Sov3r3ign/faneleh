@@ -81,10 +81,15 @@ export const experience = [
     role: "IT Intern",
     org: "CAPACITI",
     location: "Hybrid",
+    summary:
+      "Within CAPACITI through the Youth Employment Service programme, I am engaging in structured workplace learning and skills development, contributing to real-world tasks while advancing my professional capabilities.",
     bullets: [
-      "Building practical IT and software skills through hands-on project work.",
-      "Collaborating with peers and mentors on real-world technology challenges.",
-      "Exploring full-stack development, cloud fundamentals, and AI-assisted tooling.",
+      "Assisting in the execution of assigned projects, ensuring timely delivery and attention to detail.",
+      "Developing foundational and technical skills relevant to industry practices and workplace environments.",
+      "Collaborating with team members to solve problems and improve workflow efficiency.",
+      "Participating in training sessions and applying learned concepts to practical tasks.",
+      "Strengthening communication, adaptability, and professional conduct within a structured corporate setting.",
+      "Supporting day-to-day operational tasks as required by supervisors and team leads.",
     ],
   },
   {
