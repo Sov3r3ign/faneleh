@@ -46,32 +46,22 @@ export const education = [
   },
   {
     period: "2020 – 2022",
-    title: "High School Diploma, STEM Track",
-    org: "Secondary School Name",
-    detail: "Graduated with distinction; valedictorian of the graduating class.",
+    title: "National Senior Certificate",
+    org: "Hector Petersen High School",
+    detail: "Completed high school with a focus on academic excellence and a growing interest in technology.",
   },
 ];
 
 export const achievements = [
   {
     period: "2025",
-    title: "1st Place — National Collegiate Hackathon",
-    detail: "Led a team of four to build a real-time accessibility tool in 36 hours.",
+    title: "Telkom 10x Hackathon — Participant",
+    detail: "Participated in the Telkom 10x Hackathon, collaborating on rapid prototyping under tight deadlines.",
   },
   {
-    period: "2024",
-    title: "Dean's List",
-    detail: "Recognized for top 5% academic performance for three consecutive semesters.",
-  },
-  {
-    period: "2024",
-    title: "Open Source Contributor of the Month",
-    detail: "Highlighted by a popular developer-tooling project for sustained contributions.",
-  },
-  {
-    period: "2023",
-    title: "President — Computer Science Society",
-    detail: "Grew membership from 60 to 220 and organized a 12-talk speaker series.",
+    period: "2024 – 2025",
+    title: "Member — Computer Society",
+    detail: "Active member of the university Computer Society; took part in webinars, seminars, and a hackathon.",
   },
 ];
 
