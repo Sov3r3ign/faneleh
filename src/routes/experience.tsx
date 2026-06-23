@@ -38,6 +38,9 @@ function ExperiencePage() {
               <div>
                 <h2 className="text-lg font-semibold tracking-tight">{job.role}</h2>
                 <p className="text-sm text-primary">{job.org}</p>
+                {"summary" in job && job.summary ? (
+                  <p className="mt-3 text-sm text-foreground/85">{job.summary}</p>
+                ) : null}
                 <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-foreground/85">
                   {job.bullets.map((b) => (
                     <li key={b}>{b}</li>
