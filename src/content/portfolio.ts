@@ -38,11 +38,11 @@ export const about = {
 
 export const education = [
   {
-    period: "2022 – 2026 (expected)",
-    title: "B.Sc. Computer Science",
+    period: "2022 – 2025 (expected)",
+    title: "Bachelor of Information Technology",
     org: "University Name",
     detail:
-      "Coursework: Data Structures, Algorithms, Operating Systems, Databases, Software Engineering, Machine Learning. GPA: 3.8/4.0.",
+      "Coursework: Programming, Data Structures, Databases, Web Development, Networks, Software Engineering, Information Systems.",
   },
   {
     period: "2020 – 2022",
