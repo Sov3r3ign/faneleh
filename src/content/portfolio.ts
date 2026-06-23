@@ -7,7 +7,7 @@ export const profile = {
   tagline: "Building thoughtful software that solves real problems.",
   summary:
     "I'm an IT Intern at CAPACITI through the Youth Employment Service programme, with a Bachelor of Information Technology background. Passionate about full-stack development, clean architecture, and shipping products people enjoy using.",
-  location: "City, Country",
+  location: "Gqeberha, South Africa",
   email: "you@example.com",
   github: "https://github.com/your-handle",
   linkedin: "https://www.linkedin.com/in/your-handle",
