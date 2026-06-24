@@ -45,36 +45,43 @@
   --color-ring: var(--ring);
   --color-surface: var(--surface);
   --color-subtle: var(--subtle);
+  --color-cyan: var(--cyan);
+  --color-magenta: var(--magenta);
+  --color-grid: var(--grid);
 }
 
 :root {
-  --radius: 0.5rem;
+  --radius: 0.25rem;
 
-  /* Dark Synthesis: near-black canvas, zinc ink, blue accent */
-  --background: oklch(0.16 0.005 270);          /* #0a0a0a-ish */
-  --foreground: oklch(0.96 0.003 250);          /* zinc-100 */
-  --surface: oklch(0.20 0.005 270);             /* slightly raised */
-  --subtle: oklch(0.24 0.005 270);
+  /* VR Console: deep void, cyan/magenta neon, holographic grid */
+  --background: oklch(0.12 0.01 250);
+  --foreground: oklch(0.97 0.005 240);
+  --surface: oklch(0.16 0.012 250);
+  --subtle: oklch(0.20 0.012 250);
 
-  --card: oklch(0.18 0.005 270);
-  --card-foreground: oklch(0.96 0.003 250);
-  --popover: oklch(0.18 0.005 270);
-  --popover-foreground: oklch(0.96 0.003 250);
+  --card: oklch(0.15 0.012 250);
+  --card-foreground: oklch(0.97 0.005 240);
+  --popover: oklch(0.15 0.012 250);
+  --popover-foreground: oklch(0.97 0.005 240);
 
-  --primary: oklch(0.62 0.19 258);              /* blue-500 */
-  --primary-foreground: oklch(0.99 0 0);
-  --secondary: oklch(0.24 0.005 270);
-  --secondary-foreground: oklch(0.92 0.003 250);
-  --muted: oklch(0.22 0.005 270);
-  --muted-foreground: oklch(0.62 0.01 260);     /* zinc-500 */
-  --accent: oklch(0.28 0.04 258);
-  --accent-foreground: oklch(0.96 0.003 250);
-  --destructive: oklch(0.58 0.22 27);
+  --primary: oklch(0.82 0.16 200);              /* cyan */
+  --primary-foreground: oklch(0.12 0.01 250);
+  --cyan: oklch(0.85 0.17 195);
+  --magenta: oklch(0.70 0.24 330);
+  --grid: oklch(0.85 0.17 195 / 0.18);
+
+  --secondary: oklch(0.22 0.012 250);
+  --secondary-foreground: oklch(0.92 0.005 240);
+  --muted: oklch(0.20 0.012 250);
+  --muted-foreground: oklch(0.62 0.02 230);
+  --accent: oklch(0.30 0.08 200);
+  --accent-foreground: oklch(0.97 0.005 240);
+  --destructive: oklch(0.65 0.24 20);
   --destructive-foreground: oklch(0.99 0 0);
 
-  --border: oklch(1 0 0 / 0.08);
-  --input: oklch(1 0 0 / 0.10);
-  --ring: oklch(0.62 0.19 258);
+  --border: oklch(0.85 0.17 195 / 0.12);
+  --input: oklch(0.85 0.17 195 / 0.16);
+  --ring: oklch(0.82 0.16 200);
 }
 
 @layer base {
@@ -90,21 +97,29 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -10%, oklch(0.30 0.12 200 / 0.25), transparent 60%),
+      radial-gradient(ellipse 60% 40% at 100% 100%, oklch(0.35 0.18 330 / 0.18), transparent 60%);
+    background-attachment: fixed;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
     letter-spacing: -0.02em;
     font-weight: 600;
   }
+  ::selection {
+    background: var(--cyan);
+    color: var(--background);
+  }
 }
 
 @utility container-page {
   width: 100%;
   margin-inline: auto;
-  max-width: 72rem;
+  max-width: 84rem;
   padding-inline: 1.25rem;
   @media (min-width: 768px) {
-    padding-inline: 2rem;
+    padding-inline: 2.5rem;
   }
 }
 
@@ -124,3 +139,109 @@
   font-weight: 400;
 }
 
+/* Holographic perspective grid floor */
+@utility grid-floor {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 70%, transparent 100%);
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    width: 220%;
+    height: 70%;
+    transform: translateX(-50%) perspective(600px) rotateX(60deg);
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 48px 48px;
+    transform-origin: center top;
+    animation: grid-pan 12s linear infinite;
+  }
+}
+
+@keyframes grid-pan {
+  from { background-position: 0 0, 0 0; }
+  to { background-position: 0 48px, 48px 0; }
+}
+
+/* Subtle scanlines */
+@utility scanlines {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 2px,
+      oklch(1 0 0 / 0.015) 2px,
+      oklch(1 0 0 / 0.015) 3px
+    );
+    mix-blend-mode: overlay;
+  }
+}
+
+/* HUD panel with corner brackets */
+@utility hud {
+  position: relative;
+  border: 1px solid var(--color-border);
+  background: linear-gradient(180deg, oklch(0.18 0.015 250 / 0.6), oklch(0.14 0.012 250 / 0.4));
+  backdrop-filter: blur(8px);
+}
+
+@utility hud-brackets {
+  position: relative;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--cyan);
+  }
+  &::before {
+    top: -1px; left: -1px;
+    border-right: none;
+    border-bottom: none;
+  }
+  &::after {
+    bottom: -1px; right: -1px;
+    border-left: none;
+    border-top: none;
+  }
+}
+
+@utility glow-cyan {
+  box-shadow:
+    0 0 0 1px oklch(0.85 0.17 195 / 0.4),
+    0 0 24px oklch(0.85 0.17 195 / 0.25),
+    inset 0 0 24px oklch(0.85 0.17 195 / 0.05);
+}
+
+@utility text-glow {
+  text-shadow: 0 0 24px oklch(0.85 0.17 195 / 0.5);
+}
+
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@utility ticker {
+  display: flex;
+  width: max-content;
+  animation: ticker 40s linear infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0.2; }
+}
+@utility blink {
+  animation: blink 1.4s ease-in-out infinite;
+}
