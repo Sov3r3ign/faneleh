@@ -30,11 +30,9 @@ export const about = {
     "Contribute to open-source projects in the African tech ecosystem.",
   ],
   interests: [
-    "Full-stack web & mobile",
-    "Backend systems & APIs",
-    "Cybersecurity fundamentals",
-    "Agile delivery",
-    "Social-impact tech",
+    "Full-stack development",
+    "VR engineering",
+    "Game development",
   ],
 };
 
