@@ -12,7 +12,7 @@ export const profile = {
   email: "fanelehlebani@gmail.com",
   phone: "+27 63 632 7769",
   github: "https://github.com/Sov3r3ign",
-  linkedin: "https://www.linkedin.com/in/fanelesibonge-hlebani",
+  linkedin: "https://www.linkedin.com/in/fanelesibonge-hlebani-032806236/",
 };
 
 export const about = {
