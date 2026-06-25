@@ -21,7 +21,7 @@ export const about = {
   professionalBackground:
     "I work across the stack with C#, Java, Python, and JavaScript, and have built production-style projects with Node.js, ASP.NET Core, Flutter, React Native, and Android (Java). I care about clean OOP design, collaborative Git workflows, and shipping things that actually get used.",
   vision:
-    "To build software that meaningfully improves everyday life — secure, accessible, and grounded in real user needs.",
+    "To build software that meaningfully improves everyday life — secure, accessible, and grounded in real user needs — building systems that help communities thrive.",
   mission:
     "Combine solid engineering fundamentals with empathy for users and teammates, and contribute to products that scale responsibly.",
   goals: [
