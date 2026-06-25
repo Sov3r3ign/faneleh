@@ -118,57 +118,78 @@ export const projects = [
       "Built at the Telkom 10x Hackathon (Gqeberha); recognised for social impact and a working prototype delivered on deadline.",
   },
   {
-    name: "StudyQuest",
+    name: "IoT Access Control System",
     overview:
-      "An Android learning management system for tracking students, content, and progress with a responsive, user-friendly UI.",
-    role: "Android developer (team)",
-    stack: ["Android Studio", "Java", "SQLite", "Git"],
+      "A Python TCP server integrated with Cisco Packet Tracer to manage a double-door access control system for an office automation scenario. Demonstrates IoT network security, real-time access data handling, and secure communication between simulated hardware and software control layers.",
+    role: "Backend / IoT developer",
+    stack: ["Python", "TCP Sockets", "Cisco Packet Tracer", "Network Security"],
     outcomes:
-      "Delivered frontend-to-backend integration and documentation through a collaborative Git workflow across the full build cycle.",
+      "Built secure socket communication for access events, simulated double-door and emergency-exit logic, and applied IoT security principles for authenticated, reliable data exchange.",
+  },
+  {
+    name: "StudyQuest — Learning Management System",
+    overview:
+      "A native Android LMS for managing student records, course content, and academic tracking. Led the database integration layer — designing SQLite schemas and ensuring seamless backend-to-frontend data flow in a structured team build.",
+    role: "Android developer · DB integration lead (team)",
+    stack: ["Android", "Java", "SQLite", "Git"],
+    outcomes:
+      "Designed the SQLite schema for students, courses, and progress; contributed UI and navigation flows; documented integration across a collaborative Git workflow.",
   },
 ];
 
 export const certifications = [
-  {
-    period: "Sep 2025",
-    title: "Agile Project Management",
-    issuer: "HP LIFE",
-    url: "#",
-  },
-  {
-    period: "Sep 2025",
-    title: "AI for Beginners",
-    issuer: "HP LIFE",
-    url: "#",
-  },
-  {
-    period: "Sep 2025",
-    title: "Cybersecurity Awareness",
-    issuer: "HP LIFE",
-    url: "#",
-  },
-  {
-    period: "Jun 2025",
-    title: "Microsoft AI Fluency",
-    issuer: "Microsoft",
-    url: "#",
-  },
-  {
-    period: "2024",
-    title: "Cybersecurity Awareness Programme",
-    issuer: "Nelson Mandela University",
-    url: "#",
-  },
-  {
-    period: "May 2022",
-    title: "Introduction to Cybersecurity",
-    issuer: "Cisco Networking Academy",
-    url: "#",
-  },
-  {
-    period: "May 2022",
-    title: "Introduction to Internet of Things",
-    issuer: "Cisco Networking Academy",
-    url: "#",
-  },
+  // — HP LIFE —
+  { period: "Sep 2025", title: "Agile Project Management", issuer: "HP LIFE", url: "#" },
+  { period: "Sep 2025", title: "AI for Beginners", issuer: "HP LIFE", url: "#" },
+  { period: "Sep 2025", title: "Cybersecurity Awareness", issuer: "HP LIFE", url: "#" },
+
+  // — Microsoft / NMU / Cisco —
+  { period: "Jun 2025", title: "Microsoft AI Fluency", issuer: "Microsoft", url: "#" },
+  { period: "2024", title: "Cybersecurity Awareness Programme", issuer: "Nelson Mandela University", url: "#" },
+  { period: "May 2022", title: "Introduction to Cybersecurity", issuer: "Cisco Networking Academy", url: "#" },
+  { period: "May 2022", title: "Introduction to Internet of Things", issuer: "Cisco Networking Academy", url: "#" },
+
+  // — Google AI Essentials Specialization —
+  { period: "2025", title: "Introduction to AI", issuer: "Google · AI Essentials", url: "https://coursera.org/verify/specialization/PE8HWUL545PX" },
+  { period: "2025", title: "Maximize Productivity With AI Tools", issuer: "Google · AI Essentials", url: "https://coursera.org/verify/specialization/PE8HWUL545PX" },
+  { period: "2025", title: "Discover the Art of Prompting", issuer: "Google · AI Essentials", url: "https://coursera.org/verify/specialization/PE8HWUL545PX" },
+  { period: "2025", title: "Use AI Responsibly", issuer: "Google · AI Essentials", url: "https://coursera.org/verify/specialization/PE8HWUL545PX" },
+  { period: "2025", title: "Stay Ahead of the AI Curve", issuer: "Google · AI Essentials", url: "https://coursera.org/verify/specialization/PE8HWUL545PX" },
+
+  // — AI Bootcamp —
+  { period: "AI Bootcamp", title: "Generative AI: Prompt Engineering Basics", issuer: "AI Bootcamp", url: "#" },
+  { period: "AI Bootcamp", title: "AI For Everyone", issuer: "AI Bootcamp", url: "#" },
+  { period: "AI Bootcamp", title: "Introduction to Artificial Intelligence (AI)", issuer: "AI Bootcamp", url: "#" },
+  { period: "AI Bootcamp", title: "Introduction to Generative AI", issuer: "AI Bootcamp", url: "#" },
+  { period: "AI Bootcamp", title: "AI Essentials", issuer: "AI Bootcamp", url: "#" },
+  { period: "AI Bootcamp", title: "Generative AI with Large Language Models", issuer: "AI Bootcamp", url: "#" },
+  { period: "AI Bootcamp", title: "AI Foundations: Prompt Engineering with ChatGPT", issuer: "AI Bootcamp", url: "#" },
+  { period: "AI Bootcamp", title: "Python for Data Science, AI & Development", issuer: "AI Bootcamp", url: "#" },
+  { period: "AI Bootcamp", title: "Supervised Machine Learning: Regression and Classification", issuer: "AI Bootcamp", url: "#" },
+  { period: "AI Bootcamp", title: "Advanced Learning Algorithms", issuer: "AI Bootcamp", url: "#" },
+  { period: "AI Bootcamp", title: "Unsupervised Learning, Recommenders, Reinforcement Learning", issuer: "AI Bootcamp", url: "#" },
+  { period: "AI Bootcamp", title: "Trustworthy AI: Managing Bias, Ethics, and Accountability", issuer: "AI Bootcamp", url: "#" },
+  { period: "AI Bootcamp", title: "Introduction to Responsible AI", issuer: "AI Bootcamp", url: "#" },
+
+  // — Professional Development —
+  { period: "Prof. Development", title: "Write Professional Emails in English", issuer: "Candidate PD", url: "#" },
+  { period: "Prof. Development", title: "Verbal Communications and Presentation Skills", issuer: "Candidate PD", url: "#" },
+  { period: "Prof. Development", title: "Active Listening: Enhancing Communication Skills", issuer: "Candidate PD", url: "#" },
+  { period: "Prof. Development", title: "Developing Interpersonal Skills", issuer: "Candidate PD", url: "#" },
+  { period: "Prof. Development", title: "Work Smarter, Not Harder: Time Management for Personal & Professional Productivity", issuer: "Candidate PD", url: "#" },
+  { period: "Prof. Development", title: "Emotional Intelligence in the Workplace", issuer: "Candidate PD", url: "#" },
+  { period: "Prof. Development", title: "Finding Your Professional Voice: Confidence & Impact", issuer: "Candidate PD", url: "#" },
+  { period: "Prof. Development", title: "Introduction to Personal Branding", issuer: "Candidate PD", url: "#" },
+  { period: "Prof. Development", title: "Leading with Impact: Team Dynamics, Strategy and Ethics", issuer: "Candidate PD", url: "#" },
+  { period: "Prof. Development", title: "Financial Planning for Young Adults", issuer: "Candidate PD", url: "#" },
+  { period: "Prof. Development", title: "Preparation for Job Interviews", issuer: "Candidate PD", url: "#" },
+  { period: "Prof. Development", title: "Job Interview Preparation Mastery", issuer: "Candidate PD", url: "#" },
+  { period: "Prof. Development", title: "Prepare and Practice for Interviews with AI", issuer: "Candidate PD", url: "#" },
+  { period: "Prof. Development", title: "Psychology of the Self", issuer: "Candidate PD", url: "#" },
+  { period: "Prof. Development", title: "Managing Conflicts with Cultural and Emotional Intelligence", issuer: "Candidate PD", url: "#" },
+  { period: "Prof. Development", title: "Positive Psychology: Resilience Skills", issuer: "Candidate PD", url: "#" },
+  { period: "Prof. Development", title: "Grit and Growth Mindset", issuer: "Candidate PD", url: "#" },
+  { period: "Prof. Development", title: "Solving Problems with Creative and Critical Thinking", issuer: "Candidate PD", url: "#" },
+  { period: "Prof. Development", title: "Negotiation skills: Negotiate and resolve conflict", issuer: "Candidate PD", url: "#" },
 ];
+
