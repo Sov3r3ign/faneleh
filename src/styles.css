@@ -53,35 +53,35 @@
 :root {
   --radius: 0.25rem;
 
-  /* VR Console: deep void, cyan/magenta neon, holographic grid */
-  --background: oklch(0.12 0.01 250);
-  --foreground: oklch(0.97 0.005 240);
-  --surface: oklch(0.16 0.012 250);
-  --subtle: oklch(0.20 0.012 250);
+  /* VR Console — lifted mid-slate for readability, cyan/magenta neon */
+  --background: oklch(0.26 0.018 245);
+  --foreground: oklch(0.985 0.003 240);
+  --surface: oklch(0.30 0.02 245);
+  --subtle: oklch(0.34 0.02 245);
 
-  --card: oklch(0.15 0.012 250);
-  --card-foreground: oklch(0.97 0.005 240);
-  --popover: oklch(0.15 0.012 250);
-  --popover-foreground: oklch(0.97 0.005 240);
+  --card: oklch(0.29 0.02 245);
+  --card-foreground: oklch(0.985 0.003 240);
+  --popover: oklch(0.29 0.02 245);
+  --popover-foreground: oklch(0.985 0.003 240);
 
-  --primary: oklch(0.82 0.16 200);              /* cyan */
-  --primary-foreground: oklch(0.12 0.01 250);
-  --cyan: oklch(0.85 0.17 195);
-  --magenta: oklch(0.70 0.24 330);
-  --grid: oklch(0.85 0.17 195 / 0.18);
+  --primary: oklch(0.86 0.15 200);              /* cyan */
+  --primary-foreground: oklch(0.18 0.01 250);
+  --cyan: oklch(0.88 0.16 195);
+  --magenta: oklch(0.78 0.20 330);
+  --grid: oklch(0.88 0.16 195 / 0.22);
 
-  --secondary: oklch(0.22 0.012 250);
-  --secondary-foreground: oklch(0.92 0.005 240);
-  --muted: oklch(0.20 0.012 250);
-  --muted-foreground: oklch(0.62 0.02 230);
-  --accent: oklch(0.30 0.08 200);
-  --accent-foreground: oklch(0.97 0.005 240);
-  --destructive: oklch(0.65 0.24 20);
+  --secondary: oklch(0.36 0.02 245);
+  --secondary-foreground: oklch(0.97 0.005 240);
+  --muted: oklch(0.34 0.02 245);
+  --muted-foreground: oklch(0.80 0.02 230);
+  --accent: oklch(0.42 0.08 200);
+  --accent-foreground: oklch(0.985 0.003 240);
+  --destructive: oklch(0.68 0.22 20);
   --destructive-foreground: oklch(0.99 0 0);
 
-  --border: oklch(0.85 0.17 195 / 0.12);
-  --input: oklch(0.85 0.17 195 / 0.16);
-  --ring: oklch(0.82 0.16 200);
+  --border: oklch(0.88 0.16 195 / 0.20);
+  --input: oklch(0.88 0.16 195 / 0.22);
+  --ring: oklch(0.86 0.15 200);
 }
 
 @layer base {
@@ -98,8 +98,8 @@
     color: var(--color-foreground);
     font-family: var(--font-sans);
     background-image:
-      radial-gradient(ellipse 80% 50% at 50% -10%, oklch(0.30 0.12 200 / 0.25), transparent 60%),
-      radial-gradient(ellipse 60% 40% at 100% 100%, oklch(0.35 0.18 330 / 0.18), transparent 60%);
+      radial-gradient(ellipse 80% 50% at 50% -10%, oklch(0.55 0.14 200 / 0.20), transparent 60%),
+      radial-gradient(ellipse 60% 40% at 100% 100%, oklch(0.55 0.18 330 / 0.14), transparent 60%);
     background-attachment: fixed;
   }
   h1, h2, h3, h4, h5, h6 {

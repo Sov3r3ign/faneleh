@@ -99,8 +99,41 @@ function Index() {
               </div>
             </div>
 
-            {/* RIGHT — TELEMETRY PANEL */}
-            <div className="lg:col-span-4">
+            {/* RIGHT — PORTRAIT + TELEMETRY */}
+            <div className="lg:col-span-4 space-y-4">
+              {/* Portrait slot */}
+              <figure className="hud hud-brackets relative overflow-hidden">
+                <div className="flex items-center justify-between border-b border-border px-4 py-2 font-mono text-[10px] uppercase tracking-[0.3em]">
+                  <span className="text-cyan">▣ PORTRAIT</span>
+                  <span className="text-muted-foreground">CH/01</span>
+                </div>
+                <div className="relative aspect-[4/5] w-full bg-surface">
+                  {/* Replace src with /portrait.jpg once added to /public */}
+                  <div
+                    aria-label="Portrait placeholder"
+                    className="absolute inset-0 flex items-center justify-center"
+                    style={{
+                      backgroundImage:
+                        "linear-gradient(135deg, var(--surface), var(--subtle))",
+                    }}
+                  >
+                    <div className="text-center">
+                      <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-cyan/80">
+                        [ image_slot ]
+                      </p>
+                      <p className="mt-2 font-mono text-[9px] uppercase tracking-[0.25em] text-muted-foreground">
+                        drop /public/portrait.jpg
+                      </p>
+                    </div>
+                  </div>
+                  {/* corner ticks */}
+                  <span className="pointer-events-none absolute left-2 top-2 h-3 w-3 border-l border-t border-cyan/60" />
+                  <span className="pointer-events-none absolute right-2 top-2 h-3 w-3 border-r border-t border-cyan/60" />
+                  <span className="pointer-events-none absolute left-2 bottom-2 h-3 w-3 border-l border-b border-cyan/60" />
+                  <span className="pointer-events-none absolute right-2 bottom-2 h-3 w-3 border-r border-b border-cyan/60" />
+                </div>
+              </figure>
+
               <div className="hud hud-brackets p-5">
                 <div className="flex items-center justify-between border-b border-border pb-3">
                   <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-cyan">
@@ -122,35 +155,18 @@ function Index() {
                   ))}
                 </dl>
 
-                <div className="mt-5 border-t border-border pt-4">
-                  <p className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground">
-                    Mission
-                  </p>
-                  <p className="mt-2 text-xs leading-relaxed text-foreground/85">
-                    {about.mission}
-                  </p>
-                </div>
-
                 <div className="mt-5 flex items-center justify-between border-t border-border pt-4 font-mono text-[10px] uppercase tracking-[0.25em]">
-                  <span className="flex items-center gap-2 text-foreground/80">
+                  <span className="flex items-center gap-2 text-foreground/90">
                     <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-cyan" />
                     Available
                   </span>
                   <span className="text-magenta">PRIORITY/HIGH</span>
                 </div>
               </div>
-
-              {/* mini console */}
-              <div className="mt-4 hud p-4 font-mono text-[10px] leading-relaxed text-foreground/70">
-                <span className="text-cyan">$</span> whoami<br />
-                <span className="text-foreground">↳ software_engineer</span>
-                <br />
-                <span className="text-cyan">$</span> uptime<br />
-                <span className="text-foreground">↳ 3y · learning_curve: rising</span>
-              </div>
             </div>
           </div>
         </div>
+
 
         {/* TICKER */}
         <div className="relative z-10 overflow-hidden border-t border-border bg-background/60 py-3">
