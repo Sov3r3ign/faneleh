@@ -107,6 +107,7 @@ export const projects = [
     stack: ["Flutter", "Supabase", "PostgreSQL", "Git"],
     outcomes:
       "First-time implementation of Flutter and Supabase; secure auth, incident management, and a real-time reporting pipeline.",
+    url: "https://github.com/Sov3r3ign/SafeZone-Project",
   },
   {
     name: "SheGuardian",
@@ -116,6 +117,7 @@ export const projects = [
     stack: ["React Native", "Smartwatch APIs", "Git"],
     outcomes:
       "Built at the Telkom 10x Hackathon (Gqeberha); recognised for social impact and a working prototype delivered on deadline.",
+    url: "https://github.com/Sov3r3ign/Smart-Safety-Watch-App",
   },
   {
     name: "IoT Access Control System",
@@ -125,6 +127,7 @@ export const projects = [
     stack: ["Python", "TCP Sockets", "Cisco Packet Tracer", "Network Security"],
     outcomes:
       "Built secure socket communication for access events, simulated double-door and emergency-exit logic, and applied IoT security principles for authenticated, reliable data exchange.",
+    url: "https://github.com/Sov3r3ign/Python-and-IoT-",
   },
   {
     name: "StudyQuest — Learning Management System",
@@ -134,6 +137,7 @@ export const projects = [
     stack: ["Android", "Java", "SQLite", "Git"],
     outcomes:
       "Designed the SQLite schema for students, courses, and progress; contributed UI and navigation flows; documented integration across a collaborative Git workflow.",
+    url: "https://github.com/Sov3r3ign/LearningManagementSystem",
   },
 ];
 
