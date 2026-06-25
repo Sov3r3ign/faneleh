@@ -6,9 +6,9 @@ import { profile, projects } from "@/content/portfolio";
 export const Route = createFileRoute("/projects")({
   head: () => ({
     meta: [
-      { title: `Work — ${profile.name}` },
+      { title: `Projects — ${profile.name}` },
       { name: "description", content: "Selected projects showcasing my engineering work." },
-      { property: "og:title", content: `Work — ${profile.name}` },
+      { property: "og:title", content: `Projects — ${profile.name}` },
       { property: "og:description", content: "Selected projects showcasing my engineering work." },
     ],
   }),
@@ -19,7 +19,7 @@ function ProjectsPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Work"
+        eyebrow="Projects"
         index={`Archive / 0${projects.length}`}
         title="Selected projects."
         intro="A focused set of work — each chosen because it taught me something or shipped real value."
