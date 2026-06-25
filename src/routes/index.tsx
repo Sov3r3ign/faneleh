@@ -39,20 +39,6 @@ function Index() {
       {/* ====================== HERO / DECK ====================== */}
       <section className="relative overflow-hidden border-b border-border">
         <div className="grid-floor" aria-hidden />
-        {/* HUD top bar */}
-        <div className="relative z-10 border-b border-border bg-background/40 backdrop-blur-sm">
-          <div className="container-page flex h-9 items-center justify-between font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
-            <div className="flex items-center gap-4">
-              <span className="text-cyan">● REC</span>
-              <span className="hidden sm:inline">SECTOR / HOME</span>
-              <span className="hidden md:inline">USER / GUEST</span>
-            </div>
-            <div className="flex items-center gap-4">
-              <span className="hidden sm:inline">2026.06.24</span>
-              <span className="blink">_</span>
-            </div>
-          </div>
-        </div>
 
         <div className="container-page relative z-10 py-20 md:py-32">
           <div className="grid gap-12 lg:grid-cols-12 lg:gap-8">
