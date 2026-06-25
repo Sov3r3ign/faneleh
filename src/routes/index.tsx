@@ -164,7 +164,9 @@ function Index() {
                 </div>
               </div>
             </div>
+          </div>
         </div>
+
 
         {/* TICKER */}
         <div className="relative z-10 overflow-hidden border-t border-border bg-background/60 py-3">
