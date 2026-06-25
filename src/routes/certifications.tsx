@@ -29,7 +29,7 @@ function CertificationsPage() {
           <ul className="divide-y divide-border border-y border-border">
             {certifications.map((c, idx) => (
               <li
-                key={idx}
+                key={c.title + c.issuer}
                 className="group grid grid-cols-[auto_1fr_auto] items-center gap-4 py-6 md:grid-cols-[80px_120px_1fr_auto] md:gap-10 md:py-7"
               >
                 <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
@@ -49,14 +49,17 @@ function CertificationsPage() {
                     {c.issuer}
                   </p>
                 </div>
-                <a
+                
+                {c.url ? (<a
                   href={c.url}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex shrink-0 items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground transition-colors hover:text-foreground"
                 >
                   View <ArrowUpRight className="h-3 w-3" />
-                </a>
+                </a>) : (<span className="inline-flex shrink-0 items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                  View
+                </span>)}
               </li>
             ))}
           </ul>

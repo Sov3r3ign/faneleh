@@ -22,15 +22,15 @@ export const Route = createFileRoute("/")({
 });
 
 const coords = [
-  { k: "LAT", v: "-33.9608" },
-  { k: "LNG", v: "25.6022" },
-  { k: "TZ", v: "SAST+02" },
-  { k: "SIG", v: "STABLE" },
+  { k: "ROLE", v: "Full Stack Developer" },
+  { k: "FOCUS", v: "Work Readiness" },
+  { k: "STACK", v: "JavaScript, TypeScript, React, Node.js" },
+  { k: "STATUS", v: "AVAILABLE" },
 ];
 
 const stack = [
-  "TypeScript", "React", "TanStack", "Node.js", "PostgreSQL",
-  "Tailwind", "Vite", "Python", "Git", "Linux", "Figma", "REST",
+  "C#","HTML","CSS","React", "JavaScript","Java (Mobile Development)", "Node.js", "PostgreSQL",
+  "Tailwind", "Vite", "Python", "Git", "Canva", "REST",
 ];
 
 function Index() {
@@ -94,23 +94,8 @@ function Index() {
                   <span className="text-muted-foreground">CH/01</span>
                 </div>
                 <div className="relative aspect-[4/5] w-full bg-surface">
-                  {/* Replace src with /portrait.jpg once added to /public */}
-                  <div
-                    aria-label="Portrait placeholder"
-                    className="absolute inset-0 flex items-center justify-center"
-                    style={{
-                      backgroundImage:
-                        "linear-gradient(135deg, var(--surface), var(--subtle))",
-                    }}
-                  >
-                    <div className="text-center">
-                      <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-cyan/80">
-                        [ image_slot ]
-                      </p>
-                      <p className="mt-2 font-mono text-[9px] uppercase tracking-[0.25em] text-muted-foreground">
-                        drop /public/portrait.jpg
-                      </p>
-                    </div>
+                  <div className="relative aspect-[4/5] w-full bg-surface flex items-center justify-center">
+                    <img src="/portrait.jpg" alt="Portrait" className="h-48 w-48 rounded-full border border-border object-cover"/>
                   </div>
                   {/* corner ticks */}
                   <span className="pointer-events-none absolute left-2 top-2 h-3 w-3 border-l border-t border-cyan/60" />
@@ -126,7 +111,7 @@ function Index() {
                     ▣ TELEMETRY
                   </span>
                   <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
-                    ID/0xFH-25
+                    ID/0xFH-26
                   </span>
                 </div>
 
@@ -146,7 +131,7 @@ function Index() {
                     <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-cyan" />
                     Available
                   </span>
-                  <span className="text-magenta">PRIORITY/HIGH</span>
+                  <span className="text-magenta">ENGINEERING</span>
                 </div>
               </div>
             </div>

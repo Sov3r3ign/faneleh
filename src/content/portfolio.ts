@@ -70,7 +70,7 @@ export const achievements = [
 
 export const experience = [
   {
-    period: "2025 – Present",
+    period: "2026 – Present",
     role: "IT Intern",
     org: "CAPACITI",
     location: "Hybrid",
