@@ -12,7 +12,7 @@ export const profile = {
   email: "fanelehlebani@gmail.com",
   phone: "+27 63 632 7769",
   github: "https://github.com/Sov3r3ign",
-  linkedin: "https://www.linkedin.com/in/fanelesibonge-hlebani",
+  linkedin: "https://www.linkedin.com/in/fanelesibonge-hlebani-032806236/",
 };
 
 export const about = {
@@ -21,7 +21,7 @@ export const about = {
   professionalBackground:
     "I work across the stack with C#, Java, Python, and JavaScript, and have built production-style projects with Node.js, ASP.NET Core, Flutter, React Native, and Android (Java). I care about clean OOP design, collaborative Git workflows, and shipping things that actually get used.",
   vision:
-    "To build software that meaningfully improves everyday life — secure, accessible, and grounded in real user needs.",
+    "To build software that meaningfully improves everyday life — secure, accessible, and grounded in real user needs — building systems that help communities thrive.",
   mission:
     "Combine solid engineering fundamentals with empathy for users and teammates, and contribute to products that scale responsibly.",
   goals: [
@@ -107,6 +107,7 @@ export const projects = [
     stack: ["Flutter", "Supabase", "PostgreSQL", "Git"],
     outcomes:
       "First-time implementation of Flutter and Supabase; secure auth, incident management, and a real-time reporting pipeline.",
+    url: "https://github.com/Sov3r3ign/SafeZone-Project",
   },
   {
     name: "SheGuardian",
@@ -116,6 +117,7 @@ export const projects = [
     stack: ["React Native", "Smartwatch APIs", "Git"],
     outcomes:
       "Built at the Telkom 10x Hackathon (Gqeberha); recognised for social impact and a working prototype delivered on deadline.",
+    url: "https://github.com/Sov3r3ign/Smart-Safety-Watch-App",
   },
   {
     name: "IoT Access Control System",
@@ -125,6 +127,7 @@ export const projects = [
     stack: ["Python", "TCP Sockets", "Cisco Packet Tracer", "Network Security"],
     outcomes:
       "Built secure socket communication for access events, simulated double-door and emergency-exit logic, and applied IoT security principles for authenticated, reliable data exchange.",
+    url: "https://github.com/Sov3r3ign/Python-and-IoT-",
   },
   {
     name: "StudyQuest — Learning Management System",
@@ -134,6 +137,7 @@ export const projects = [
     stack: ["Android", "Java", "SQLite", "Git"],
     outcomes:
       "Designed the SQLite schema for students, courses, and progress; contributed UI and navigation flows; documented integration across a collaborative Git workflow.",
+    url: "https://github.com/Sov3r3ign/LearningManagementSystem",
   },
 ];
 

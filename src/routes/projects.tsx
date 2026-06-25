@@ -6,9 +6,9 @@ import { profile, projects } from "@/content/portfolio";
 export const Route = createFileRoute("/projects")({
   head: () => ({
     meta: [
-      { title: `Work — ${profile.name}` },
+      { title: `Projects — ${profile.name}` },
       { name: "description", content: "Selected projects showcasing my engineering work." },
-      { property: "og:title", content: `Work — ${profile.name}` },
+      { property: "og:title", content: `Projects — ${profile.name}` },
       { property: "og:description", content: "Selected projects showcasing my engineering work." },
     ],
   }),
@@ -19,7 +19,7 @@ function ProjectsPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Work"
+        eyebrow="Projects"
         index={`Archive / 0${projects.length}`}
         title="Selected projects."
         intro="A focused set of work — each chosen because it taught me something or shipped real value."
@@ -49,6 +49,17 @@ function ProjectsPage() {
                     <span className="text-muted-foreground">Outcome — </span>
                     {p.outcomes}
                   </p>
+                  {p.url && (
+                    <a
+                      href={p.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="group mt-6 inline-flex items-center gap-2 border border-border px-3 py-2 font-mono text-[10px] uppercase tracking-[0.25em] text-foreground/80 transition-colors hover:border-foreground/40 hover:text-foreground"
+                    >
+                      View repository
+                      <ArrowUpRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                    </a>
+                  )}
                 </div>
 
                 <div className="md:col-span-4">
