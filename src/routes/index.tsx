@@ -69,13 +69,16 @@ function Index() {
               </p>
 
               <div className="mt-10 flex flex-wrap items-center gap-3">
-                <Link
-                  to="/projects"
+                <a
+                  href="/Fanelesibonge_Hlebani_CV.pdf"
+                  target="_blank"
+                  rel="noreferrer"
                   className="hud-brackets group inline-flex items-center gap-3 border border-cyan/60 bg-cyan/10 px-5 py-3 font-mono text-[11px] uppercase tracking-[0.25em] text-cyan transition-all hover:bg-cyan/20 glow-cyan"
                 >
-                  Enter archive
+                  View CV
                   <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                </Link>
+                </a>
+
                 <Link
                   to="/contact"
                   className="inline-flex items-center gap-2 border border-border px-5 py-3 font-mono text-[11px] uppercase tracking-[0.25em] text-foreground/80 transition-colors hover:border-foreground/40 hover:text-foreground"
