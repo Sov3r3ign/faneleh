@@ -69,13 +69,16 @@ function Index() {
               </p>
 
               <div className="mt-10 flex flex-wrap items-center gap-3">
-                <Link
-                  to="/projects"
+                <a
+                  href="/Fanelesibonge_Hlebani_CV.pdf"
+                  target="_blank"
+                  rel="noreferrer"
                   className="hud-brackets group inline-flex items-center gap-3 border border-cyan/60 bg-cyan/10 px-5 py-3 font-mono text-[11px] uppercase tracking-[0.25em] text-cyan transition-all hover:bg-cyan/20 glow-cyan"
                 >
-                  Enter archive
+                  View CV
                   <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                </Link>
+                </a>
+
                 <Link
                   to="/contact"
                   className="inline-flex items-center gap-2 border border-border px-5 py-3 font-mono text-[11px] uppercase tracking-[0.25em] text-foreground/80 transition-colors hover:border-foreground/40 hover:text-foreground"
@@ -93,10 +96,9 @@ function Index() {
                   <span className="text-cyan">▣ PORTRAIT</span>
                   <span className="text-muted-foreground">CH/01</span>
                 </div>
-                <div className="relative aspect-[4/5] w-full bg-surface">
-                  <div className="relative aspect-[4/5] w-full bg-surface flex items-center justify-center">
-                    <img src="/FH-0625-WA0015.jpg" alt="Portrait" className="h-48 w-48 rounded-full border border-border object-cover"/>
-                  </div>
+                <div className="relative aspect-[4/5] w-full bg-surface overflow-hidden">
+                  <img src="/portrait.jpg" alt={`${profile.name} portrait`} className="absolute inset-0 h-full w-full object-cover object-center"/>
+
                   {/* corner ticks */}
                   <span className="pointer-events-none absolute left-2 top-2 h-3 w-3 border-l border-t border-cyan/60" />
                   <span className="pointer-events-none absolute right-2 top-2 h-3 w-3 border-r border-t border-cyan/60" />
