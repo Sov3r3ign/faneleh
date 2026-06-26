@@ -95,7 +95,7 @@ function Index() {
                 </div>
                 <div className="relative aspect-[4/5] w-full bg-surface">
                   <div className="relative aspect-[4/5] w-full bg-surface flex items-center justify-center">
-                    <img src="/portrait.jpg" alt="Portrait" className="h-48 w-48 rounded-full border border-border object-cover"/>
+                    <img src="/FH-0625-WA0015.jpg" alt="Portrait" className="h-48 w-48 rounded-full border border-border object-cover"/>
                   </div>
                   {/* corner ticks */}
                   <span className="pointer-events-none absolute left-2 top-2 h-3 w-3 border-l border-t border-cyan/60" />
