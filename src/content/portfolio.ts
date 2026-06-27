@@ -141,61 +141,74 @@ export const projects = [
   },
 ];
 
-export const certifications = [
-  // — HP LIFE —
-  { period: "Sep 2025", title: "Agile Project Management", issuer: "HP LIFE", url: "/Agile_P_M.png" },
-  { period: "Sep 2025", title: "AI for Beginners", issuer: "HP LIFE", url: "/AI_for_Beginners.jpg" },
-  { period: "Sep 2025", title: "Cybersecurity Awareness", issuer: "HP LIFE", url: "/Intro_Cyber_A.png" },
+// Category keys — display order on the Credentials page.
+export const certificationCategories = [
+  { key: "yes", label: "YES Programme" },
+  { key: "ai-bootcamp", label: "AI Bootcamp" },
+  { key: "candidate-pd", label: "Candidate Professional Development" },
+  { key: "academic", label: "Academic & Vendor" },
+] as const;
 
-  // — Microsoft / NMU / Cisco —
-  { period: "Jun 2025", title: "Microsoft AI Fluency", issuer: "Microsoft", url: "/Microsoft_AI_Fluency.jpg" },
-  { period: "2024", title: "Cybersecurity Awareness Programme", issuer: "Nelson Mandela University", url: "https://www.linkedin.com/feed/update/urn:li:activity:7275072572403122176/" },
-  { period: "May 2022", title: "Introduction to Cybersecurity", issuer: "Cisco Networking Academy", url: "https://www.credly.com/badges/b412d4c6-67aa-4068-87d6-e12aa6071027/linked_in_profile" },
-  { period: "May 2022", title: "Introduction to Internet of Things", issuer: "Cisco Networking Academy", url: "https://www.credly.com/badges/6618a9aa-0351-4bdf-a82e-fe0ee96608bb/linked_in_profile" },
+export type CertificationCategory =
+  (typeof certificationCategories)[number]["key"];
 
-  // — Google AI Essentials Specialization —
-  { period: "2025", title: "Google AI Essentials (Specialization)", issuer: "Google · Coursera", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Google_AI_Essentials.pdf" },
-  { period: "2025", title: "Introduction to AI", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Introduction_to_AI.pdf" },
-  { period: "2025", title: "Maximize Productivity With AI Tools", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Maximize_Productivity_With_AI_Tools.pdf" },
-  { period: "2025", title: "Discover the Art of Prompting", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Discover_the_Art_of_Prompting.pdf" },
-  { period: "2025", title: "Use AI Responsibly", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Use_AI_Responsibly.pdf" },
-  { period: "2025", title: "Stay Ahead of the AI Curve", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Stay_Ahead_of_the_AI_Curve.pdf" },
+export const certifications: Array<{
+  period: string;
+  title: string;
+  issuer: string;
+  url: string;
+  category: CertificationCategory;
+}> = [
+  // — YES Programme (CAPACITI delivery: HP LIFE, Microsoft, Google AI Essentials) —
+  { category: "yes", period: "Sep 2025", title: "Agile Project Management", issuer: "HP LIFE", url: "/Agile_P_M.png" },
+  { category: "yes", period: "Sep 2025", title: "AI for Beginners", issuer: "HP LIFE", url: "/AI_for_Beginners.jpg" },
+  { category: "yes", period: "Sep 2025", title: "Cybersecurity Awareness", issuer: "HP LIFE", url: "/Intro_Cyber_A.png" },
+  { category: "yes", period: "Jun 2025", title: "Microsoft AI Fluency", issuer: "Microsoft", url: "/Microsoft_AI_Fluency.jpg" },
+  { category: "yes", period: "2025", title: "Google AI Essentials (Specialization)", issuer: "Google · Coursera", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Google_AI_Essentials.pdf" },
+  { category: "yes", period: "2025", title: "Introduction to AI", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Introduction_to_AI.pdf" },
+  { category: "yes", period: "2025", title: "Maximize Productivity With AI Tools", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Maximize_Productivity_With_AI_Tools.pdf" },
+  { category: "yes", period: "2025", title: "Discover the Art of Prompting", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Discover_the_Art_of_Prompting.pdf" },
+  { category: "yes", period: "2025", title: "Use AI Responsibly", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Use_AI_Responsibly.pdf" },
+  { category: "yes", period: "2025", title: "Stay Ahead of the AI Curve", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Stay_Ahead_of_the_AI_Curve.pdf" },
 
   // — AI Bootcamp —
-  { period: "AI Bootcamp", title: "Generative AI: Prompt Engineering Basics", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/Generative_AI_-_Prompt_Engineering_Basics.pdf" },
-  { period: "AI Bootcamp", title: "AI For Everyone", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/AI_For_Everyone.pdf" },
-  { period: "AI Bootcamp", title: "Introduction to Artificial Intelligence (AI)", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/Intro_to_AI.pdf" },
-  { period: "AI Bootcamp", title: "Introduction to Generative AI", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/Intro_to_Gen_AI.pdf" },
-  { period: "AI Bootcamp", title: "AI Essentials", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/AI_Essentials.pdf" },
-  { period: "AI Bootcamp", title: "Generative AI with Large Language Models", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/Generative_AI_with_LLMs.pdf" },
-  { period: "AI Bootcamp", title: "AI Foundations: Prompt Engineering with ChatGPT", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/AI_Foundations.pdf" },
-  { period: "AI Bootcamp", title: "Python for Data Science, AI & Development", issuer: "AI Bootcamp", url: "#" },
-  { period: "AI Bootcamp", title: "Supervised Machine Learning: Regression and Classification", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/Supervised_ML.pdf" },
-  { period: "AI Bootcamp", title: "Advanced Learning Algorithms", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/Advanced_Learning_Algorithms.pdf" },
-  { period: "AI Bootcamp", title: "Unsupervised Learning, Recommenders, Reinforcement Learning", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/Unsupervised_Learning.pdf" },
-  { period: "AI Bootcamp", title: "Trustworthy AI: Managing Bias, Ethics, and Accountability", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/Trustworthy_AI.pdf" },
-  { period: "AI Bootcamp", title: "Introduction to Responsible AI", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/Introduction_to_Responsible_AI.pdf" },
+  { category: "ai-bootcamp", period: "AI Bootcamp", title: "Generative AI: Prompt Engineering Basics", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/Generative_AI_-_Prompt_Engineering_Basics.pdf" },
+  { category: "ai-bootcamp", period: "AI Bootcamp", title: "AI For Everyone", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/AI_For_Everyone.pdf" },
+  { category: "ai-bootcamp", period: "AI Bootcamp", title: "Introduction to Artificial Intelligence (AI)", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/Intro_to_AI.pdf" },
+  { category: "ai-bootcamp", period: "AI Bootcamp", title: "Introduction to Generative AI", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/Intro_to_Gen_AI.pdf" },
+  { category: "ai-bootcamp", period: "AI Bootcamp", title: "AI Essentials", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/AI_Essentials.pdf" },
+  { category: "ai-bootcamp", period: "AI Bootcamp", title: "Generative AI with Large Language Models", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/Generative_AI_with_LLMs.pdf" },
+  { category: "ai-bootcamp", period: "AI Bootcamp", title: "AI Foundations: Prompt Engineering with ChatGPT", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/AI_Foundations.pdf" },
+  { category: "ai-bootcamp", period: "AI Bootcamp", title: "Python for Data Science, AI & Development", issuer: "AI Bootcamp", url: "#" },
+  { category: "ai-bootcamp", period: "AI Bootcamp", title: "Supervised Machine Learning: Regression and Classification", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/Supervised_ML.pdf" },
+  { category: "ai-bootcamp", period: "AI Bootcamp", title: "Advanced Learning Algorithms", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/Advanced_Learning_Algorithms.pdf" },
+  { category: "ai-bootcamp", period: "AI Bootcamp", title: "Unsupervised Learning, Recommenders, Reinforcement Learning", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/Unsupervised_Learning.pdf" },
+  { category: "ai-bootcamp", period: "AI Bootcamp", title: "Trustworthy AI: Managing Bias, Ethics, and Accountability", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/Trustworthy_AI.pdf" },
+  { category: "ai-bootcamp", period: "AI Bootcamp", title: "Introduction to Responsible AI", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/Introduction_to_Responsible_AI.pdf" },
 
-  // — Professional Development —
-  { period: "Prof. Development", title: "Write Professional Emails in English", issuer: "Candidate PD", url: "/certificates/candidate-pd/Write_Professional_Emails_in_English.pdf" },
-  { period: "Prof. Development", title: "Verbal Communications and Presentation Skills", issuer: "Candidate PD", url: "/certificates/candidate-pd/Verbal_Communications_and_Presentation_Skills.pdf" },
-  { period: "Prof. Development", title: "Active Listening: Enhancing Communication Skills", issuer: "Candidate PD", url: "/certificates/candidate-pd/Active_Listening.pdf" },
-  { period: "Prof. Development", title: "Developing Interpersonal Skills", issuer: "Candidate PD", url: "/certificates/candidate-pd/Developing_Interpersonal_Skills.pdf" },
-  { period: "Prof. Development", title: "Work Smarter, Not Harder: Time Management for Personal & Professional Productivity", issuer: "Candidate PD", url: "/certificates/candidate-pd/Work_Smarter,_Not_Harder.pdf" },
-  { period: "Prof. Development", title: "Emotional Intelligence in the Workplace", issuer: "Candidate PD", url: "/certificates/candidate-pd/Emotional_Intelligence_in_the_Workplace.pdf" },
-  { period: "Prof. Development", title: "Finding Your Professional Voice: Confidence & Impact", issuer: "Candidate PD", url: "/certificates/candidate-pd/Finding_Your_Professional_Voice_-_Confidence_and_Impact.pdf" },
-  { period: "Prof. Development", title: "Introduction to Personal Branding", issuer: "Candidate PD", url: "/certificates/candidate-pd/Introduction_to_Personal_Branding.pdf" },
-  { period: "Prof. Development", title: "Leading with Impact: Team Dynamics, Strategy and Ethics", issuer: "Candidate PD", url: "/certificates/candidate-pd/Leading_with_Impact.pdf" },
-  { period: "Prof. Development", title: "Financial Planning for Young Adults", issuer: "Candidate PD", url: "#" },
-  { period: "Prof. Development", title: "Preparation for Job Interviews", issuer: "Candidate PD", url: "#" },
-  { period: "Prof. Development", title: "Job Interview Preparation Mastery", issuer: "Candidate PD", url: "#" },
-  { period: "Prof. Development", title: "Prepare and Practice for Interviews with AI", issuer: "Candidate PD", url: "#" },
-  { period: "Prof. Development", title: "Psychology of the Self", issuer: "Candidate PD", url: "#" },
-  { period: "Prof. Development", title: "Managing Conflicts with Cultural and Emotional Intelligence", issuer: "Candidate PD", url: "#" },
-  { period: "Prof. Development", title: "Positive Psychology: Resilience Skills", issuer: "Candidate PD", url: "#" },
-  { period: "Prof. Development", title: "Grit and Growth Mindset", issuer: "Candidate PD", url: "#" },
-  { period: "Prof. Development", title: "Solving Problems with Creative and Critical Thinking", issuer: "Candidate PD", url: "#" },
-  { period: "Prof. Development", title: "Negotiation skills: Negotiate and resolve conflict", issuer: "Candidate PD", url: "#" },
+  // — Candidate Professional Development —
+  { category: "candidate-pd", period: "Prof. Development", title: "Write Professional Emails in English", issuer: "Candidate PD", url: "/certificates/candidate-pd/Write_Professional_Emails_in_English.pdf" },
+  { category: "candidate-pd", period: "Prof. Development", title: "Verbal Communications and Presentation Skills", issuer: "Candidate PD", url: "/certificates/candidate-pd/Verbal_Communications_and_Presentation_Skills.pdf" },
+  { category: "candidate-pd", period: "Prof. Development", title: "Active Listening: Enhancing Communication Skills", issuer: "Candidate PD", url: "/certificates/candidate-pd/Active_Listening.pdf" },
+  { category: "candidate-pd", period: "Prof. Development", title: "Developing Interpersonal Skills", issuer: "Candidate PD", url: "/certificates/candidate-pd/Developing_Interpersonal_Skills.pdf" },
+  { category: "candidate-pd", period: "Prof. Development", title: "Work Smarter, Not Harder: Time Management for Personal & Professional Productivity", issuer: "Candidate PD", url: "/certificates/candidate-pd/Work_Smarter,_Not_Harder.pdf" },
+  { category: "candidate-pd", period: "Prof. Development", title: "Emotional Intelligence in the Workplace", issuer: "Candidate PD", url: "/certificates/candidate-pd/Emotional_Intelligence_in_the_Workplace.pdf" },
+  { category: "candidate-pd", period: "Prof. Development", title: "Finding Your Professional Voice: Confidence & Impact", issuer: "Candidate PD", url: "/certificates/candidate-pd/Finding_Your_Professional_Voice_-_Confidence_and_Impact.pdf" },
+  { category: "candidate-pd", period: "Prof. Development", title: "Introduction to Personal Branding", issuer: "Candidate PD", url: "/certificates/candidate-pd/Introduction_to_Personal_Branding.pdf" },
+  { category: "candidate-pd", period: "Prof. Development", title: "Leading with Impact: Team Dynamics, Strategy and Ethics", issuer: "Candidate PD", url: "/certificates/candidate-pd/Leading_with_Impact.pdf" },
+  { category: "candidate-pd", period: "Prof. Development", title: "Financial Planning for Young Adults", issuer: "Candidate PD", url: "#" },
+  { category: "candidate-pd", period: "Prof. Development", title: "Preparation for Job Interviews", issuer: "Candidate PD", url: "#" },
+  { category: "candidate-pd", period: "Prof. Development", title: "Job Interview Preparation Mastery", issuer: "Candidate PD", url: "#" },
+  { category: "candidate-pd", period: "Prof. Development", title: "Prepare and Practice for Interviews with AI", issuer: "Candidate PD", url: "#" },
+  { category: "candidate-pd", period: "Prof. Development", title: "Psychology of the Self", issuer: "Candidate PD", url: "#" },
+  { category: "candidate-pd", period: "Prof. Development", title: "Managing Conflicts with Cultural and Emotional Intelligence", issuer: "Candidate PD", url: "#" },
+  { category: "candidate-pd", period: "Prof. Development", title: "Positive Psychology: Resilience Skills", issuer: "Candidate PD", url: "#" },
+  { category: "candidate-pd", period: "Prof. Development", title: "Grit and Growth Mindset", issuer: "Candidate PD", url: "#" },
+  { category: "candidate-pd", period: "Prof. Development", title: "Solving Problems with Creative and Critical Thinking", issuer: "Candidate PD", url: "#" },
+  { category: "candidate-pd", period: "Prof. Development", title: "Negotiation skills: Negotiate and resolve conflict", issuer: "Candidate PD", url: "#" },
+
+  // — Academic & Vendor —
+  { category: "academic", period: "2024", title: "Cybersecurity Awareness Programme", issuer: "Nelson Mandela University", url: "https://www.linkedin.com/feed/update/urn:li:activity:7275072572403122176/" },
+  { category: "academic", period: "May 2022", title: "Introduction to Cybersecurity", issuer: "Cisco Networking Academy", url: "https://www.credly.com/badges/b412d4c6-67aa-4068-87d6-e12aa6071027/linked_in_profile" },
+  { category: "academic", period: "May 2022", title: "Introduction to Internet of Things", issuer: "Cisco Networking Academy", url: "https://www.credly.com/badges/6618a9aa-0351-4bdf-a82e-fe0ee96608bb/linked_in_profile" },
 ];
-
-
