@@ -146,7 +146,7 @@ export const certificationCategories = [
   { key: "yes", label: "YES Programme" },
   { key: "ai-bootcamp", label: "AI Bootcamp" },
   { key: "candidate-pd", label: "Candidate Professional Development" },
-  { key: "academic", label: "Academic & Vendor" },
+  { key: "others", label: "Others" },
 ] as const;
 
 export type CertificationCategory =
