@@ -160,17 +160,19 @@ export const certifications: Array<{
   url: string;
   category: CertificationCategory;
 }> = [
+  // — Google AI Essentials —
+  { category: "google-ai-essentials", period: "2025", title: "Google AI Essentials (Specialization)", issuer: "Google · Coursera", url: "https://coursera.org/verify/specialization/PE8HWUL545PX" },
+  { category: "google-ai-essentials", period: "2025", title: "Introduction to AI", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Introduction_to_AI.pdf" },
+  { category: "google-ai-essentials", period: "2025", title: "Maximize Productivity With AI Tools", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Maximize_Productivity_With_AI_Tools.pdf" },
+  { category: "google-ai-essentials", period: "2025", title: "Discover the Art of Prompting", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Discover_the_Art_of_Prompting.pdf" },
+  { category: "google-ai-essentials", period: "2025", title: "Use AI Responsibly", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Use_AI_Responsibly.pdf" },
+  { category: "google-ai-essentials", period: "2025", title: "Stay Ahead of the AI Curve", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Stay_Ahead_of_the_AI_Curve.pdf" },
+
   // — Others (miscellaneous certifications) —
   { category: "others", period: "Sep 2025", title: "Agile Project Management", issuer: "HP LIFE", url: "/certificates/yes/Agile_Project_Management.pdf" },
   { category: "others", period: "Sep 2025", title: "AI for Beginners", issuer: "HP LIFE", url: "/certificates/yes/AI_for_Beginners.pdf" },
   { category: "others", period: "Sep 2025", title: "Cybersecurity Awareness", issuer: "HP LIFE", url: "/certificates/yes/Introduction_to_Cybersecurity_Awareness.pdf" },
   { category: "others", period: "Jun 2025", title: "Microsoft AI Fluency", issuer: "Microsoft", url: "/Microsoft_AI_Fluency.jpg" },
-  { category: "others", period: "2025", title: "Google AI Essentials (Specialization)", issuer: "Google · Coursera", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Google_AI_Essentials.pdf" },
-  { category: "others", period: "2025", title: "Introduction to AI", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Introduction_to_AI.pdf" },
-  { category: "others", period: "2025", title: "Maximize Productivity With AI Tools", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Maximize_Productivity_With_AI_Tools.pdf" },
-  { category: "others", period: "2025", title: "Discover the Art of Prompting", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Discover_the_Art_of_Prompting.pdf" },
-  { category: "others", period: "2025", title: "Use AI Responsibly", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Use_AI_Responsibly.pdf" },
-  { category: "others", period: "2025", title: "Stay Ahead of the AI Curve", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Stay_Ahead_of_the_AI_Curve.pdf" },
 
   // — AI Bootcamp —
   { category: "ai-bootcamp", period: "AI Bootcamp", title: "Generative AI: Prompt Engineering Basics", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/Generative_AI_-_Prompt_Engineering_Basics.pdf" },
