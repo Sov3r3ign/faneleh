@@ -160,9 +160,9 @@ export const certifications: Array<{
   category: CertificationCategory;
 }> = [
   // — YES Programme (CAPACITI delivery: HP LIFE, Microsoft, Google AI Essentials) —
-  { category: "yes", period: "Sep 2025", title: "Agile Project Management", issuer: "HP LIFE", url: "/Agile_P_M.png" },
-  { category: "yes", period: "Sep 2025", title: "AI for Beginners", issuer: "HP LIFE", url: "/AI_for_Beginners.jpg" },
-  { category: "yes", period: "Sep 2025", title: "Cybersecurity Awareness", issuer: "HP LIFE", url: "/Intro_Cyber_A.png" },
+  { category: "yes", period: "Sep 2025", title: "Agile Project Management", issuer: "HP LIFE", url: "/certificates/yes/Agile_Project_Management.pdf" },
+  { category: "yes", period: "Sep 2025", title: "AI for Beginners", issuer: "HP LIFE", url: "/certificates/yes/AI_for_Beginners.pdf" },
+  { category: "yes", period: "Sep 2025", title: "Cybersecurity Awareness", issuer: "HP LIFE", url: "/certificates/yes/Introduction_to_Cybersecurity_Awareness.pdf" },
   { category: "yes", period: "Jun 2025", title: "Microsoft AI Fluency", issuer: "Microsoft", url: "/Microsoft_AI_Fluency.jpg" },
   { category: "yes", period: "2025", title: "Google AI Essentials (Specialization)", issuer: "Google · Coursera", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Google_AI_Essentials.pdf" },
   { category: "yes", period: "2025", title: "Introduction to AI", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Introduction_to_AI.pdf" },
