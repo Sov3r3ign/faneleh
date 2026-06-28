@@ -144,6 +144,7 @@ export const projects = [
 // Category keys — display order on the Credentials page.
 export const certificationCategories = [
   { key: "yes", label: "YES Programme" },
+  { key: "google-ai-essentials", label: "Google AI Essentials" },
   { key: "ai-bootcamp", label: "AI Bootcamp" },
   { key: "candidate-pd", label: "Candidate Professional Development" },
   { key: "others", label: "Others" },
