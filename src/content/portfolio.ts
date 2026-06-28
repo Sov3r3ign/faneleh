@@ -168,6 +168,11 @@ export const certifications: Array<{
   { category: "google-ai-essentials", period: "2025", title: "Use AI Responsibly", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Use_AI_Responsibly.pdf" },
   { category: "google-ai-essentials", period: "2025", title: "Stay Ahead of the AI Curve", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Stay_Ahead_of_the_AI_Curve.pdf" },
 
+  // — YES Programme —
+  { category: "yes", period: "Jun 2026", title: "Work Readiness (Digital Learning)", issuer: "YES — Youth Employment Service", url: "/certificates/yes-programme/work_readiness_certificate.pdf" },
+  { category: "yes", period: "Jun 2026", title: "AI Explorer & AI Pathfinder (Digital Learning)", issuer: "YES — Youth Employment Service", url: "/certificates/yes-programme/digital_certificate.pdf" },
+
+
   // — Others (miscellaneous certifications) —
   { category: "others", period: "Sep 2025", title: "Agile Project Management", issuer: "HP LIFE", url: "/certificates/yes/Agile_Project_Management.pdf" },
   { category: "others", period: "Sep 2025", title: "AI for Beginners", issuer: "HP LIFE", url: "/certificates/yes/AI_for_Beginners.pdf" },
