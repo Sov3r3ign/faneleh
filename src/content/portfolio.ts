@@ -146,7 +146,7 @@ export const certificationCategories = [
   { key: "yes", label: "YES Programme" },
   { key: "ai-bootcamp", label: "AI Bootcamp" },
   { key: "candidate-pd", label: "Candidate Professional Development" },
-  { key: "academic", label: "Academic & Vendor" },
+  { key: "others", label: "Others" },
 ] as const;
 
 export type CertificationCategory =
@@ -159,17 +159,17 @@ export const certifications: Array<{
   url: string;
   category: CertificationCategory;
 }> = [
-  // — YES Programme (CAPACITI delivery: HP LIFE, Microsoft, Google AI Essentials) —
-  { category: "yes", period: "Sep 2025", title: "Agile Project Management", issuer: "HP LIFE", url: "/certificates/yes/Agile_Project_Management.pdf" },
-  { category: "yes", period: "Sep 2025", title: "AI for Beginners", issuer: "HP LIFE", url: "/certificates/yes/AI_for_Beginners.pdf" },
-  { category: "yes", period: "Sep 2025", title: "Cybersecurity Awareness", issuer: "HP LIFE", url: "/certificates/yes/Introduction_to_Cybersecurity_Awareness.pdf" },
-  { category: "yes", period: "Jun 2025", title: "Microsoft AI Fluency", issuer: "Microsoft", url: "/Microsoft_AI_Fluency.jpg" },
-  { category: "yes", period: "2025", title: "Google AI Essentials (Specialization)", issuer: "Google · Coursera", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Google_AI_Essentials.pdf" },
-  { category: "yes", period: "2025", title: "Introduction to AI", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Introduction_to_AI.pdf" },
-  { category: "yes", period: "2025", title: "Maximize Productivity With AI Tools", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Maximize_Productivity_With_AI_Tools.pdf" },
-  { category: "yes", period: "2025", title: "Discover the Art of Prompting", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Discover_the_Art_of_Prompting.pdf" },
-  { category: "yes", period: "2025", title: "Use AI Responsibly", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Use_AI_Responsibly.pdf" },
-  { category: "yes", period: "2025", title: "Stay Ahead of the AI Curve", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Stay_Ahead_of_the_AI_Curve.pdf" },
+  // — Others (miscellaneous certifications) —
+  { category: "others", period: "Sep 2025", title: "Agile Project Management", issuer: "HP LIFE", url: "/certificates/yes/Agile_Project_Management.pdf" },
+  { category: "others", period: "Sep 2025", title: "AI for Beginners", issuer: "HP LIFE", url: "/certificates/yes/AI_for_Beginners.pdf" },
+  { category: "others", period: "Sep 2025", title: "Cybersecurity Awareness", issuer: "HP LIFE", url: "/certificates/yes/Introduction_to_Cybersecurity_Awareness.pdf" },
+  { category: "others", period: "Jun 2025", title: "Microsoft AI Fluency", issuer: "Microsoft", url: "/Microsoft_AI_Fluency.jpg" },
+  { category: "others", period: "2025", title: "Google AI Essentials (Specialization)", issuer: "Google · Coursera", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Google_AI_Essentials.pdf" },
+  { category: "others", period: "2025", title: "Introduction to AI", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Introduction_to_AI.pdf" },
+  { category: "others", period: "2025", title: "Maximize Productivity With AI Tools", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Maximize_Productivity_With_AI_Tools.pdf" },
+  { category: "others", period: "2025", title: "Discover the Art of Prompting", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Discover_the_Art_of_Prompting.pdf" },
+  { category: "others", period: "2025", title: "Use AI Responsibly", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Use_AI_Responsibly.pdf" },
+  { category: "others", period: "2025", title: "Stay Ahead of the AI Curve", issuer: "Google · AI Essentials", url: "/certificates/google-ai-essentials/Fanelesibonge_Hlebani_Stay_Ahead_of_the_AI_Curve.pdf" },
 
   // — AI Bootcamp —
   { category: "ai-bootcamp", period: "AI Bootcamp", title: "Generative AI: Prompt Engineering Basics", issuer: "AI Bootcamp", url: "/certificates/ai-bootcamp/Generative_AI_-_Prompt_Engineering_Basics.pdf" },
@@ -207,8 +207,7 @@ export const certifications: Array<{
   { category: "candidate-pd", period: "Prof. Development", title: "Solving Problems with Creative and Critical Thinking", issuer: "Candidate PD", url: "#" },
   { category: "candidate-pd", period: "Prof. Development", title: "Negotiation skills: Negotiate and resolve conflict", issuer: "Candidate PD", url: "#" },
 
-  // — Academic & Vendor —
-  { category: "academic", period: "2024", title: "Cybersecurity Awareness Programme", issuer: "Nelson Mandela University", url: "https://www.linkedin.com/feed/update/urn:li:activity:7275072572403122176/" },
-  { category: "academic", period: "May 2022", title: "Introduction to Cybersecurity", issuer: "Cisco Networking Academy", url: "https://www.credly.com/badges/b412d4c6-67aa-4068-87d6-e12aa6071027/linked_in_profile" },
-  { category: "academic", period: "May 2022", title: "Introduction to Internet of Things", issuer: "Cisco Networking Academy", url: "https://www.credly.com/badges/6618a9aa-0351-4bdf-a82e-fe0ee96608bb/linked_in_profile" },
+  { category: "others", period: "2024", title: "Cybersecurity Awareness Programme", issuer: "Nelson Mandela University", url: "https://www.linkedin.com/feed/update/urn:li:activity:7275072572403122176/" },
+  { category: "others", period: "May 2022", title: "Introduction to Cybersecurity", issuer: "Cisco Networking Academy", url: "https://www.credly.com/badges/b412d4c6-67aa-4068-87d6-e12aa6071027/linked_in_profile" },
+  { category: "others", period: "May 2022", title: "Introduction to Internet of Things", issuer: "Cisco Networking Academy", url: "https://www.credly.com/badges/6618a9aa-0351-4bdf-a82e-fe0ee96608bb/linked_in_profile" },
 ];
