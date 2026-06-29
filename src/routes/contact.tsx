@@ -32,16 +32,28 @@ function ContactRow({
       href={href}
       target={href.startsWith("http") ? "_blank" : undefined}
       rel="noreferrer"
-      className="group grid grid-cols-[auto_1fr_auto] items-center gap-6 border-b border-border py-6 transition-colors hover:text-foreground"
+      className="group relative block overflow-hidden border border-border bg-surface/40 backdrop-blur-sm transition-all duration-300 hover:border-cyan/60 hover:bg-surface/70 hover:shadow-[0_0_24px_oklch(0.85_0.17_195_/_0.12)]"
     >
-      <Icon className="h-4 w-4 text-muted-foreground transition-colors group-hover:text-primary" />
-      <div className="min-w-0">
-        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
-          {label}
-        </p>
-        <p className="mt-1.5 truncate text-sm text-foreground md:text-base">{value}</p>
+      {/* Corner brackets */}
+      <span className="pointer-events-none absolute left-0 top-0 h-3 w-3 border-l border-t border-cyan/60 transition-colors group-hover:border-cyan" />
+      <span className="pointer-events-none absolute right-0 top-0 h-3 w-3 border-r border-t border-cyan/60 transition-colors group-hover:border-cyan" />
+      <span className="pointer-events-none absolute bottom-0 left-0 h-3 w-3 border-b border-l border-cyan/60 transition-colors group-hover:border-cyan" />
+      <span className="pointer-events-none absolute bottom-0 right-0 h-3 w-3 border-b border-r border-cyan/60 transition-colors group-hover:border-cyan" />
+
+      <div className="flex items-center gap-5 px-6 py-5">
+        <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-border bg-background/60 transition-colors group-hover:border-cyan/40">
+          <Icon className="h-4 w-4 text-muted-foreground transition-colors group-hover:text-cyan" />
+        </div>
+        <div className="min-w-0 flex-1">
+          <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
+            {label}
+          </p>
+          <p className="mt-1 truncate text-sm text-foreground transition-colors group-hover:text-cyan md:text-base">
+            {value}
+          </p>
+        </div>
+        <ArrowUpRight className="h-4 w-4 shrink-0 text-muted-foreground/50 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-cyan" />
       </div>
-      <ArrowUpRight className="h-4 w-4 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-foreground" />
     </a>
   );
 }
