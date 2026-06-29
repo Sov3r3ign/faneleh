@@ -81,7 +81,7 @@ function ContactPage() {
             <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
               Direct
             </p>
-            <div className="mt-6 border-t border-border">
+            <div className="mt-6 space-y-4">
               <ContactRow
                 label="Email"
                 value={profile.email}
