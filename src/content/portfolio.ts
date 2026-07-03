@@ -171,6 +171,7 @@ export const certifications: Array<{
   // — YES Programme —
   { category: "yes", period: "Jun 2026", title: "Work Readiness (Digital Learning)", issuer: "YES — Youth Employment Service", url: "/certificates/yes-programme/work_readiness_certificate.pdf" },
   { category: "yes", period: "Jun 2026", title: "AI Explorer & AI Pathfinder (Digital Learning)", issuer: "YES — Youth Employment Service", url: "/certificates/yes-programme/digital_certificate.pdf" },
+  { category: "yes", period: "Jul 2026", title: "Entrepreneurship (Digital Learning)", issuer: "YES — Youth Employment Service", url: "/certificates/yes-programme/entrepreneurship_certificate.pdf" },
 
 
   // — Others (miscellaneous certifications) —
