@@ -13,6 +13,8 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { BackToTop } from "@/components/back-to-top";
+import { profile } from "@/content/portfolio";
 
 function NotFoundComponent() {
   return (
@@ -79,18 +81,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Your Professional Canvas is an online platform for building and showcasing your professional digital presence." },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Your Professional Canvas is an online platform for building and showcasing your professional digital presence." },
+      { title: `${profile.name} — ${profile.title}` },
+      { name: "description", content: profile.summary },
+      { name: "author", content: profile.name },
+      { property: "og:title", content: `${profile.name} — ${profile.title}` },
+      { property: "og:description", content: profile.summary },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Lovable App" },
-      { name: "twitter:description", content: "Your Professional Canvas is an online platform for building and showcasing your professional digital presence." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cf1b2e4c-fe38-4d87-bd18-764944bd7368/id-preview-867b4613--881f8302-dd9a-4a41-b33c-3ec924a666c1.lovable.app-1782284851181.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cf1b2e4c-fe38-4d87-bd18-764944bd7368/id-preview-867b4613--881f8302-dd9a-4a41-b33c-3ec924a666c1.lovable.app-1782284851181.png" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: `${profile.name} — ${profile.title}` },
+      { name: "twitter:description", content: profile.summary },
     ],
     links: [
       {
@@ -126,11 +125,12 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <div className="flex min-h-screen flex-col bg-background text-foreground">
         <SiteHeader />
-        <main className="flex-1">
+        <main id="main-content" tabIndex={-1} className="flex-1 focus:outline-none">
           {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
           <Outlet />
         </main>
         <SiteFooter />
+        <BackToTop />
       </div>
     </QueryClientProvider>
   );
