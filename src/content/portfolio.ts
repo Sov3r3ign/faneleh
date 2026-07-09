@@ -209,7 +209,7 @@ export const certifications: Array<{
   { category: "candidate-pd", period: "Prof. Development", title: "Preparation for Job Interviews", issuer: "Candidate PD", url: "/certificates/candidate-pd/Preparation_for_Job_Interviews.pdf" },
   { category: "candidate-pd", period: "Prof. Development", title: "Job Interview Preparation Mastery", issuer: "Candidate PD", url: "/certificates/candidate-pd/Job_Interview_Preparation_Mastery.pdf" },
   { category: "candidate-pd", period: "Prof. Development", title: "Prepare and Practice for Interviews with AI", issuer: "Candidate PD", url: "/certificates/candidate-pd/Prepare_and_Practice_for_Interviews_with_AI.pdf" },
-  { category: "candidate-pd", period: "Prof. Development", title: "Psychology of the Self", issuer: "Candidate PD", url: "#" },
+  { category: "candidate-pd", period: "Prof. Development", title: "Psychology of the Self", issuer: "Candidate PD", url: "/certificates/candidate-pd/Psychology_of_the_Self.pdf" },
   { category: "candidate-pd", period: "Prof. Development", title: "Managing Conflicts with Cultural and Emotional Intelligence", issuer: "Candidate PD", url: "/certificates/candidate-pd/Managing_Conflicts_with_Cultural_and_Emotional_Intelligence.pdf" },
   { category: "candidate-pd", period: "Prof. Development", title: "Positive Psychology: Resilience Skills", issuer: "Candidate PD", url: "/certificates/candidate-pd/Positive_Psychology.pdf" },
   { category: "candidate-pd", period: "Prof. Development", title: "Grit and Growth Mindset", issuer: "Candidate PD", url: "#" },
