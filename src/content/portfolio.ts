@@ -205,7 +205,7 @@ export const certifications: Array<{
   { category: "candidate-pd", period: "Prof. Development", title: "Finding Your Professional Voice: Confidence & Impact", issuer: "Candidate PD", url: "/certificates/candidate-pd/Finding_Your_Professional_Voice_-_Confidence_and_Impact.pdf" },
   { category: "candidate-pd", period: "Prof. Development", title: "Introduction to Personal Branding", issuer: "Candidate PD", url: "/certificates/candidate-pd/Introduction_to_Personal_Branding.pdf" },
   { category: "candidate-pd", period: "Prof. Development", title: "Leading with Impact: Team Dynamics, Strategy and Ethics", issuer: "Candidate PD", url: "/certificates/candidate-pd/Leading_with_Impact.pdf" },
-  { category: "candidate-pd", period: "Prof. Development", title: "Financial Planning for Young Adults", issuer: "Candidate PD", url: "#" },
+  { category: "candidate-pd", period: "Prof. Development", title: "Financial Planning for Young Adults", issuer: "Candidate PD", url: "/certificates/candidate-pd/Financial_Planning_for_Young_Adults.pdf" },
   { category: "candidate-pd", period: "Prof. Development", title: "Preparation for Job Interviews", issuer: "Candidate PD", url: "/certificates/candidate-pd/Preparation_for_Job_Interviews.pdf" },
   { category: "candidate-pd", period: "Prof. Development", title: "Job Interview Preparation Mastery", issuer: "Candidate PD", url: "/certificates/candidate-pd/Job_Interview_Preparation_Mastery.pdf" },
   { category: "candidate-pd", period: "Prof. Development", title: "Prepare and Practice for Interviews with AI", issuer: "Candidate PD", url: "/certificates/candidate-pd/Prepare_and_Practice_for_Interviews_with_AI.pdf" },
