@@ -212,7 +212,7 @@ export const certifications: Array<{
   { category: "candidate-pd", period: "Prof. Development", title: "Psychology of the Self", issuer: "Candidate PD", url: "/certificates/candidate-pd/Psychology_of_the_Self.pdf" },
   { category: "candidate-pd", period: "Prof. Development", title: "Managing Conflicts with Cultural and Emotional Intelligence", issuer: "Candidate PD", url: "/certificates/candidate-pd/Managing_Conflicts_with_Cultural_and_Emotional_Intelligence.pdf" },
   { category: "candidate-pd", period: "Prof. Development", title: "Positive Psychology: Resilience Skills", issuer: "Candidate PD", url: "/certificates/candidate-pd/Positive_Psychology.pdf" },
-  { category: "candidate-pd", period: "Prof. Development", title: "Grit and Growth Mindset", issuer: "Candidate PD", url: "#" },
+  { category: "candidate-pd", period: "Prof. Development", title: "Grit and Growth Mindset", issuer: "Candidate PD", url: "/certificates/candidate-pd/Grit_and_Growth_Mindset.pdf" },
   { category: "candidate-pd", period: "Prof. Development", title: "Solving Problems with Creative and Critical Thinking", issuer: "Candidate PD", url: "#" },
   { category: "candidate-pd", period: "Prof. Development", title: "Negotiation skills: Negotiate and resolve conflict", issuer: "Candidate PD", url: "#" },
 
