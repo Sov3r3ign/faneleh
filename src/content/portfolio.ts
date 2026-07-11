@@ -214,7 +214,7 @@ export const certifications: Array<{
   { category: "candidate-pd", period: "Prof. Development", title: "Positive Psychology: Resilience Skills", issuer: "Candidate PD", url: "/certificates/candidate-pd/Positive_Psychology.pdf" },
   { category: "candidate-pd", period: "Prof. Development", title: "Grit and Growth Mindset", issuer: "Candidate PD", url: "/certificates/candidate-pd/Grit_and_Growth_Mindset.pdf" },
   { category: "candidate-pd", period: "Prof. Development", title: "Solving Problems with Creative and Critical Thinking", issuer: "Candidate PD", url: "/certificates/candidate-pd/Solving_Problems_with_Creative_and_Critical_Thinking.pdf" },
-  { category: "candidate-pd", period: "Prof. Development", title: "Negotiation skills: Negotiate and resolve conflict", issuer: "Candidate PD", url: "#" },
+  { category: "candidate-pd", period: "Prof. Development", title: "Negotiation skills: Negotiate and resolve conflict", issuer: "Candidate PD", url: "/certificates/candidate-pd/Negotiation_skills.pdf" },
 
   { category: "others", period: "2024", title: "Cybersecurity Awareness Programme", issuer: "Nelson Mandela University", url: "https://www.linkedin.com/feed/update/urn:li:activity:7275072572403122176/" },
   { category: "others", period: "May 2022", title: "Introduction to Cybersecurity", issuer: "Cisco Networking Academy", url: "https://www.credly.com/badges/b412d4c6-67aa-4068-87d6-e12aa6071027/linked_in_profile" },
