@@ -100,6 +100,16 @@ export const experience = [
 
 export const projects = [
   {
+    name: "OpsAssist",
+    overview:
+      "An AI-powered internal support desk that classifies, routes, and responds to tickets. Built to reduce manual triage and give teams a focused, intelligent first line of support.",
+    role: "Full-stack developer",
+    stack: ["React", "TypeScript", "AI / LLM", "Supabase"],
+    outcomes:
+      "Developed during an AI Bootcamp over the last three months; delivered an end-to-end support workflow with smart classification and automated routing.",
+    url: "https://opsassist-smart-sort.lovable.app",
+  },
+  {
     name: "SafeZone",
     overview:
       "A community crime-reporting mobile app empowering neighbourhoods with real-time incident reporting and live location tracking.",
