@@ -8,7 +8,7 @@ The portfolio is built with React, TypeScript, TanStack Start, Vite, and Tailwin
 
 Add your deployed link here once Vercel is live:
 
-`https://your-portfolio-url.vercel.app`
+`(https://faneleh.vercel.app/)`
 
 ## About the Project
 
